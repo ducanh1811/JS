@@ -38,7 +38,6 @@ document.addEventListener('click', () => {
     isClick = !isClick
     return isClick;
 });
-
 // Load trang web
 
 
