@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box_btn_search {
+  display: flex;
+  justify-content: center;
+}
+
+.input_search {
+  width: 0%;
+  height: 70px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #242628;
+  color: #ffffff;
+  padding: 0 0px;
+  font-size: 30px;
+  outline: none;
+}
+
+.btn_search {  
+  width: 20%;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.show {
+  animation-name: anim_input_search_show;
+  animation-duration: 0.5s;  
+  transition-timing-function: ease;
+}
+
+@keyframes anim_input_search_show {
+  0%   { width: 0%; padding: 0 0px;}
+  100%  { width: 80%; padding: 0 20px;}
+}
+
+.unshow {
+  animation-name: anim_input_search_unshow;
+  animation-duration: 0.5s;  
+  transition-timing-function: ease;
+}
+
+@keyframes anim_input_search_unshow {
+  0%   { width: 80%; padding: 0 20px; opacity: 1;}
+  100%  { width: 0%; padding: 0 0px; opacity: 0;}
+}
+
+/* BUTTON
+*/
+.show_button {
+  animation-name: anim_button_search_show;
+  animation-duration: 0.5s;  
+  transition-timing-function: ease;
+}
+
+@keyframes anim_button_search_show {
+  0%   { border-radius: 10px 10px 10px 10px;}
+  100%  { border-radius: 0px 10px 10px 0px}
+}
+
+.unshow_button {
+  animation-name: anim_button_search_unshow;
+  animation-duration: 0.5s;  
+  transition-timing-function: ease;
+}
+
+@keyframes anim_button_search_unshow {
+  0%   { border-radius: 0px 10px 10px 0px}
+  100%  { border-radius: 10px 10px 10px 10px;}
+}
