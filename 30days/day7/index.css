@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #8cc84c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.wrapper {
+  width: 500px;
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+}
+
+.box {
+  margin: 20px 0px;
+
+  border: 0.5px solid #888;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.contain-tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.tag {
+  background: #8cc84c;
+  display: flex;
+  margin: 0 5px 5px 0px;
+  color: #fff;
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tag .tag-text {
+  margin: 5px;
+  font-size: large;
+}
+
+.tag i {
+  margin: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+
+
+.box input {
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  font-size: large;
+}
+
+.remove {
+  background: #8cc84c;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
