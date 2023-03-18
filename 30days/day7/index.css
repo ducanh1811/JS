@@ -64,12 +64,9 @@ h1 {
 
 
 .box input {
-  display: flex;
-  flex: 1;
-  padding: 5px;
+  padding: 10px;
   border: none;
   outline: none;
-  margin: 5px;
   font-size: large;
 }
 
