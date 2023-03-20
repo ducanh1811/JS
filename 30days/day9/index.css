@@ -1,0 +1,172 @@
+* {
+  --image: url(./image/sleet.jpeg);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "nelson-rugged", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+  var(--image) no-repeat center/cover;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 650px;
+  width: 400px;
+  background: var(--image) no-repeat center/cover;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.search {
+  width: 80%;
+  margin-top: 50px;
+}
+
+.search input {
+  width: 100%;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+  outline: none;
+  border-radius: 0 10px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-style: normal;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+.search input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border-radius: 10px 0 10px 0;
+}
+
+.location-time {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  font-family: "anton", sans-serif;
+  margin: 40px;
+}
+
+.location span {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.time {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.temperature {
+  width: 65%;
+  height: 25%;
+  margin-top: 20px;
+  background: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.7);
+  font-family: "bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin: 20px;
+  color: aliceblue;
+  font-weight: 100;
+}
+
+.description {
+  font-family: "nelson-rugged", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 55px;
+  color: aliceblue;
+}
+
+.weather {
+  margin-bottom: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather .weather-icon {
+  color: gold;
+}
+
+.weather .weather-icon i {
+  font-size: 70px;
+}
+
+.weather-description {
+  color: aliceblue;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.weather-description .visibility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-description .humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-description .wind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-description .text {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+}
